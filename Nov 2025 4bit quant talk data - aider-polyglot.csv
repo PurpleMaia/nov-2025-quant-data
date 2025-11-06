@@ -7,6 +7,7 @@ Name,model string,base model,quant,edit_format,pass_rate_1,pass_rate_2,seconds_p
 ,,,,,,,,,,,,
 50 req m3ult-Qwen3-8B-UD-Q4_K_XL,openai/m3ult-Qwen3-8B-UD-Q4_K_XL,qwen3-8b,gguf-ud-q4_k_xl,diff,5.3,16.9,1182,50,5319,polyglot-benchmark,25k,fp16
 ,,,,,,,,,,,,
+20 req rtx6kpro - Qwen/Qwen3-8B nonthinking,hosted_vllm/Qwen/Qwen3-8B,qwen3-8b,fp16,diff,2.2,13.3,49.3,20,554.625,polyglot-benchmark,all,
 10 req rtx6kpro - nvidia/Qwen3-8B-FP4 nonthinking,hosted_vllm/nvidia/Qwen3-8B-FP4,qwen3-8b,nvfp4,whole,5.8,13.3,80.7,10,1815.75,polyglot-benchmark,all,
 25 req rtx6kpro - AWQ 20k Qwen/Qwen3-8B-AWQ,hosted_vllm/Qwen/Qwen3-8B-AWQ,qwen3-8b,awq-4bit,whole,4.4,13.8,39.2,25,352.8,polyglot-benchmark,20k,
 ,,,,,,,,,,,,
@@ -23,4 +24,5 @@ Name,model string,base model,quant,edit_format,pass_rate_1,pass_rate_2,seconds_p
 ,,,,,,,,,,,,
 15 req rtx6kpro - nonthink RedhatAI/Qwen3-32B-NVFP4A16,RedhatAI/Qwen3-32B-NVFP4A16,Qwen3-32B,nvfp4a16,,15.6,31.1,89.9,15,1348.5,polyglot-benchmark,24k,fp16
 15 req rtx6kpro - nonthink RedhatAI/Qwen3-32B-NVFP4,RedhatAI/Qwen3-32B-NVFP4,Qwen3-32B,nvfp4,diff,14.2,31.1,77.3,15,1159.5,polyglot-benchmark,24k,fp16
+
 1 req m3ult qwen3-32b-mlx-4bit-24k nonthinking,qwen3-32b-mlx-4bit-24k,Qwen3-32B,mlx-4bit,diff,,21.3,155.7,1,35032.5,polyglot-benchmark,24k,q8-bal-1
