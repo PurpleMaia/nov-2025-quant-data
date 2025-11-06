@@ -1,0 +1,19 @@
+Description,model,bpw,context,KV cache quant,prompt tokens,tokens generated,request_output_throughput_token_per_s,Overall Output Throughput,base model,quant
+25 thread rtx6k trtllm-serve nvidia/Qwen3-8B-FP4,nvidia/Qwen3-8B-FP4,nvfp4,auto,none,7k ish,750ish,66.02,799.76,qwen3-8b,nvfp4
+10 thread rtx6k trtllm-serve nvidia/Qwen3-8B-FP4,nvidia/Qwen3-8B-FP4,nvfp4,auto,none,7k ish,750ish,101.48,503.62,qwen3-8b,nvfp4
+1 thread rtx6k trtllm-serve nvidia/Qwen3-8B-FP4,nvidia/Qwen3-8B-FP4,nvfp4,auto,none,7k ish,750ish,106.59,98.67,qwen3-8b,nvfp4
+,,,,,,,,,,
+10 thread rtx6k vllm nvidia/Qwen3-8B-FP4 nonthinking,nvidia/Qwen3-8B-FP4,nvfp4,auto,none,7k ish,750ish,68ish,?! 15 ?! - much much faster than this,qwen3-8b,nvfp4
+1 thread rtx6k vllm nvidia/Qwen3-8B-FP4 nonthinking,nvidia/Qwen3-8B-FP4,nvfp4,auto,none,7k ish,750ish,35ish? - but forgot warmup,35ish? - but forgot warmup,qwen3-8b,nvfp4
+10 req m3ult rtx6k-Qwen3-32B-UD-Q4_K_XL nonthinking,rtx6k-Qwen3-32B-UD-Q4_K_XL,UD-Q4_K_XL,29k,fp16,7k ish,750ish,20.7,102.52,qwen3-32b,gguf UD-Q4_K_XL
+1 req m3ult rtx6k-Qwen3-32B-UD-Q4_K_XL nonthinking,rtx6k-Qwen3-32B-UD-Q4_K_XL,UD-Q4_K_XL,29k,fp16,7k ish,750ish,64.1,61.37,qwen3-32b,gguf UD-Q4_K_XL
+,,,,,,,,,,
+10 req m3ult qwen3-32b-mlx-4bit-24k nonthinking,qwen3-32b-mlx-4bit-24k,mlx-4bit,24k,q8-balanced-1,7k ish,750ish,,,qwen3-32b,mlx-4bit
+1 req m3ult qwen3-32b-mlx-4bit-24k nonthinking,qwen3-32b-mlx-4bit-24k,mlx-4bit,24k,q8-balanced-1,7k ish,750ish,20.53,20.18,qwen3-32b,mlx-4bit
+,,,,,,,,,,
+10 req rtx6kpro turboderp/Qwen3-32B-exl3-4bpw nonthinking,turboderp/Qwen3-32B-exl3-4bpw,exl3 4bpw,24k,none,7k ish,750ish,22.3,139,qwen3-32b,exl3 4bpw
+1 req rtx6kpro turboderp/Qwen3-32B-exl3-4bpw nonthinking,turboderp/Qwen3-32B-exl3-4bpw,exl3 4bpw,24k,none,7k ish,841ish,52,50.4,qwen3-32b,exl3 4bpw
+,,,,,,,,,,
+,,,,,,,,,,
+10 req rtx6kpro unsloth/Qwen3-32B-FP8 nonthinking,unsloth/Qwen3-32B-FP8,FP8,24k,none,7k ish,841ish,21.5,116.6,qwen3-32b,FP8
+1 req rtx6kpro unsloth/Qwen3-32B-FP8 nonthinking,unsloth/Qwen3-32B-FP8,FP8,24k,none,7k ish,841ish,30.9,30.2,qwen3-32b,FP8

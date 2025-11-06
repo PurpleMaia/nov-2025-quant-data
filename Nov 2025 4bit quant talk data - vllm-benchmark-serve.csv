@@ -1,0 +1,31 @@
+Description,model string,bpw,context,KV cache quant,vllm dataset-type,vllm dataset-path,total prompt tokens,total tokens generated,total (prompt+generation) speed (tok/s),generation (tok/s),base model,quant
+25 req rtx6kpro trtllm - nvidia/Qwen3-8B-FP4,nvidia/Qwen3-8B-FP4,nvfp4,all,fp16,random,-,25600,3200,13857.86,1539.76,qwen3-8b,nvfp4
+10 req rtx6kpro trtllm - nvidia/Qwen3-8B-FP4,nvidia/Qwen3-8B-FP4,nvfp4,all,fp16,random,-,10240,1280,5388.19,598.69,qwen3-8b,nvfp4
+1 req rtx6kpro trtllm - nvidia/Qwen3-8B-FP4,nvidia/Qwen3-8B-FP4,nvfp4,all,fp16,random,-,1024,128,507.54,56.39,qwen3-8b,nvfp4
+,,,,,,,,,,,,
+10 req rtx6kpro vllm - nvidia/Qwen3-8B-FP4 nonthinking,nvidia/Qwen3-8B-FP4,nvfp4,all,fp16,random,-,10240,1155,5445.63,551.97,qwen3-8b,nvfp4
+1 req rtx6kpro vllm - nvidia/Qwen3-8B-FP4 nonthinking,nvidia/Qwen3-8B-FP4,nvfp4,all,fp16,random,-,1024,128,574.13,63.79,qwen3-8b,nvfp4
+,,,,,,,,,,,,
+10 req rtx6kpro Qwen/Qwen3-8B-AWQ nonthinking,Qwen/Qwen3-8B-AWQ,AWQ,20k,fp16,random,-,10240,1208,6501,686.01,qwen3-8b,awq 4bit
+1 req rtx6kpro Qwen/Qwen3-8B-AWQ nonthinking,Qwen/Qwen3-8B-AWQ,AWQ,20k,fp16,random,-,1024,128,705.08,78.34,qwen3-8b,awq 4bit
+,,,,,,,,,,,,
+50 req m3ult-unsloth-Qwen3-8B-Q4_1 nonthink,m3ult-unsloth-Qwen3-8B-Q4_1,q4_1,25k,fp16,random,-,512000,64000,1108.47,119.11,qwen3-8b,gguf q4_1
+10 req m3ult-unsloth-Qwen3-8B-Q4_1 nonthink,m3ult-unsloth-Qwen3-8B-Q4_1,q4_1,25k,fp16,random,-,10240,1280,784.84,87.2,qwen3-8b,gguf q4_1
+1 req m3ult-unsloth-Qwen3-8B-Q4_1 nonthink,m3ult-unsloth-Qwen3-8B-Q4_1,q4_1,25k,fp16,random,-,1024,128,453.36,50.37,qwen3-8b,gguf q4_1
+,,,,,,,,,,,,
+50 req m3ult-Qwen3-8B-UD-Q4_K_XL nonthink,m3ult-Qwen3-8B-UD-Q4_K_XL,UD-Q4_K_XL,25k,fp16,random,-,512000,64000,1051,112.5,qwen3-8b,gguf UD-Q4_K_XL
+10 req m3ult-Qwen3-8B-UD-Q4_K_XL nonthink,m3ult-Qwen3-8B-UD-Q4_K_XL,UD-Q4_K_XL,25k,fp16,random,-,10240,1280,725.46,80.49,qwen3-8b,gguf UD-Q4_K_XL
+1 req m3ult-Qwen3-8B-UD-Q4_K_XL nonthink,m3ult-Qwen3-8B-UD-Q4_K_XL,UD-Q4_K_XL,25k,fp16,random,-,1024,128,437.95,48.66,qwen3-8b,gguf UD-Q4_K_XL
+10 req rtx6kpro RedhatAI/Qwen3-32B-NVFP4,RedhatAI/Qwen3-32B-NVFP4,nvfp4,all,fp16,random,-,10240,1280,2654.18,294.91,qwen3-32b,nvfp4
+1 req rtx6kpro RedhatAI/Qwen3-32B-NVFP4,RedhatAI/Qwen3-32B-NVFP4,nvfp4,all,fp16,random,-,1024,128,279.14,31.02,qwen3-32b,nvfp4
+,,,,,,,,,,,,
+10 req rtx6kpro unsloth/Qwen3-32B-FP8 nonthinking,unsloth/Qwen3-32B-FP8,FP8,24k,fp16,random,-,,,1875,178.7,qwen3-32b,FP8
+1 req rtx6kpro unsloth/Qwen3-32B-FP8 nonthinking,unsloth/Qwen3-32B-FP8,FP8,24k,fp16,random,-,1024,128,209.54,23.28,qwen3-32b,FP8
+,,,,,,,,,,,,
+10 req rtx6kpro hosted_vllm/Qwen/Qwen3-32B-AWQ nonthinking,hosted_vllm/Qwen/Qwen3-32B-AWQ,AWQ,24k,fp16,random,-,10240,1280ish,2699.2,266.76,qwen3-32b,awq 4bit
+1 req rtx6kpro hosted_vllm/Qwen/Qwen3-32B-AWQ nonthinking,hosted_vllm/Qwen/Qwen3-32B-AWQ,AWQ,24k,fp16,random,-,1024,128,404.37,44.93,qwen3-32b,awq 4bit
+------------------------------------------------------------------------------------------------------------------,--------------------------------------,--------------------------------------,--------------------------------------,--------------------------------------,--------------------------------------,--------------------------------------,--------------------------------------,--------------------------------------,--------------------------------------,--------------------------------------,,
+10 req rtx6k-Qwen3-32B-UD-Q4_K_XL nonthinking,rtx6k-Qwen3-32B-UD-Q4_K_XL,UD-Q4_K_XL,29k,fp16,random,-,10240,1280ish,983.57,83.82,qwen3-32b,gguf UD-Q4_K_XL
+1 req rtx6k-Qwen3-32B-UD-Q4_K_XL nonthinking,rtx6k-Qwen3-32B-UD-Q4_K_XL,UD-Q4_K_XL,29k,fp16,random,-,1024,128,357.94,39.77,qwen3-32b,gguf UD-Q4_K_XL
+,,,,,,,,,,,,
+1 req rtx6kpro turboderp/Qwen3-32B-exl3-4bpw nonthinking,turboderp/Qwen3-32B-exl3-4bpw,exl3 4bpw,24k,none,random,,BROKEN?,,,,qwen3-32b,exl3 4bpw

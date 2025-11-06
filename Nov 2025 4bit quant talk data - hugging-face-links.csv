@@ -1,0 +1,10 @@
+model string,HF Repo,link
+hosted_vllm/Qwen/Qwen3-32B,Qwen/Qwen3-32B,https://huggingface.co/Qwen/Qwen3-32B
+hosted_vllm/unsloth/Qwen3-32B-FP8,Qwen3-32B-FP8,https://huggingface.co/unsloth/Qwen3-32B-FP8
+Qwen3-32B-exl3-4bpw,turboderp/Qwen3-32B-exl3,https://huggingface.co/turboderp/Qwen3-32B-exl3/tree/4.0bpw
+rtx6k-Qwen3-32B-UD-Q4_K_XL,unsloth/Qwen3-32B-GGUF,https://huggingface.co/unsloth/Qwen3-32B-GGUF/blob/main/Qwen3-32B-UD-Q4_K_XL.gguf
+rtx6k-unsloth-Qwen3-32B-Q4_K_M,unsloth/Qwen3-32B-GGUF,https://huggingface.co/unsloth/Qwen3-32B-GGUF/blob/main/Qwen3-32B-Q4_K_M.gguf
+hosted_vllm/Qwen/Qwen3-32B-AWQ,Qwen/Qwen3-32B-AWQ,https://huggingface.co/Qwen/Qwen3-32B-AWQ
+RedHatAI/Qwen3-32B-NVFP4A16,RedHatAI/Qwen3-32B-NVFP4A16,https://huggingface.co/RedHatAI/Qwen3-32B-NVFP4A16
+RedHatAI/Qwen3-32B-NVFP4,RedHatAI/Qwen3-32B-NVFP4,https://huggingface.co/RedHatAI/Qwen3-32B-NVFP4
+qwen3-32b-mlx-4bit-24k,Qwen/Qwen3-32B-MLX-4bit,https://huggingface.co/Qwen/Qwen3-32B-MLX-4bit

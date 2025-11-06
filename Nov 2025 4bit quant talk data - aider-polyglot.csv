@@ -1,0 +1,26 @@
+Name,model string,base model,quant,edit_format,pass_rate_1,pass_rate_2,seconds_per_case,threads,Calculated total_time_sec,tests,max context,kv cache type
+1 req openai/qwen3-8b-dwq-053125-mlx-4bit-25k,openai/qwen3-8b-dwq-053125-mlx-4bit-25k,qwen3-8b,dwq-mlx-4bit,diff,,14.2,27.7,1,6232.5,,25k,fp16
+1 req openai/qwen3-8b-mlx-4bit-25k,openai/qwen3-8b-mlx-4bit-25k,qwen3-8b,mlx-4bit,diff,4.4,12.4,46.4,1,10440,polyglot-benchmark,25k,fp16
+1 req openai/david-mxfp4/qwen3-8b-mlx,openai/david-mxfp4/qwen3-8b-mlx,qwen3-8b,mxfp4-mlx,diff,,10.2,37.8,1,8505,,25k,fp16
+,,,,,,,,,,,,
+50 req openai/m3ult-unsloth-Qwen3-8B-Q4_1,openai/m3ult-unsloth-Qwen3-8B-Q4_1,qwen3-8b,gguf-q4_1,diff,4.9,16.9,1078.1,50,4851.45,polyglot-benchmark,25k,fp16
+,,,,,,,,,,,,
+50 req m3ult-Qwen3-8B-UD-Q4_K_XL,openai/m3ult-Qwen3-8B-UD-Q4_K_XL,qwen3-8b,gguf-ud-q4_k_xl,diff,5.3,16.9,1182,50,5319,polyglot-benchmark,25k,fp16
+,,,,,,,,,,,,
+10 req rtx6kpro - nvidia/Qwen3-8B-FP4 nonthinking,hosted_vllm/nvidia/Qwen3-8B-FP4,qwen3-8b,nvfp4,whole,5.8,13.3,80.7,10,1815.75,polyglot-benchmark,all,
+25 req rtx6kpro - AWQ 20k Qwen/Qwen3-8B-AWQ,hosted_vllm/Qwen/Qwen3-8B-AWQ,qwen3-8b,awq-4bit,whole,4.4,13.8,39.2,25,352.8,polyglot-benchmark,20k,
+,,,,,,,,,,,,
+5 req rtx6kpro - nonthink hosted_vllm/Qwen/Qwen3-32B,hosted_vllm/Qwen/Qwen3-32B,Qwen3-32B,fp16,diff,,44.0,93.6,5,4212,polyglot-benchmark,24k,fp16
+10 req rtx6kpro - nonthink hosted_vllm/unsloth/Qwen3-32B-FP8,hosted_vllm/unsloth/Qwen3-32B-FP8,Qwen3-32B,fp8,diff,,39.6,86.6,10,1948.5,polyglot-benchmark,24k,fp16
+"20 req, untune fp8 cache rtx6kpro - nonthink hosted_vllm/unsloth/Qwen3-32B-FP8",hosted_vllm/unsloth/Qwen3-32B-FP8,Qwen3-32B,fp8,diff,,37.3,147.5,20,1659.375,polyglot-benchmark,24k,untuned fp8
+,,,,,,,,,,,,
+15 req rtx6kpro - nonthink Qwen3-32B-exl3-4bpw,Qwen3-32B-exl3-4bpw,Qwen3-32B,exl3-4bpw,diff,,35.1,121.8,15,1802.64,polyglot-benchmark,24k,fp16
+,,,,,,,,,,,,
+10 req - nonthink rtx6k-Qwen3-32B-UD-Q4_K_XL,rtx6k-Qwen3-32B-UD-Q4_K_XL,Qwen3-32B,gguf-ud-q4_k_xl,diff,16.4,34.2,124,10,2790,polyglot-benchmark,29k,fp16
+10 req - nonthink rtx6k-unsloth-Qwen3-32B-Q4_K_M,rtx6k-unsloth-Qwen3-32B-Q4_K_M,Qwen3-32B,gguf-q4_k_m,diff,12.9,34.2,122.7,10,2760.75,polyglot-benchmark,29k,fp16
+,,,,,,,,,,,,
+15 req rtx6kpro - nonthink hosted_vllm/Qwen/Qwen3-32B-AWQ,hosted_vllm/Qwen/Qwen3-32B-AWQ,Qwen3-32B,awq-4bit,diff,12.4,31.1,90.7,15,1360.5,polyglot-benchmark,24k,fp16
+,,,,,,,,,,,,
+15 req rtx6kpro - nonthink RedhatAI/Qwen3-32B-NVFP4A16,RedhatAI/Qwen3-32B-NVFP4A16,Qwen3-32B,nvfp4a16,,15.6,31.1,89.9,15,1348.5,polyglot-benchmark,24k,fp16
+15 req rtx6kpro - nonthink RedhatAI/Qwen3-32B-NVFP4,RedhatAI/Qwen3-32B-NVFP4,Qwen3-32B,nvfp4,diff,14.2,31.1,77.3,15,1159.5,polyglot-benchmark,24k,fp16
+1 req m3ult qwen3-32b-mlx-4bit-24k nonthinking,qwen3-32b-mlx-4bit-24k,Qwen3-32B,mlx-4bit,diff,,21.3,155.7,1,35032.5,polyglot-benchmark,24k,q8-bal-1

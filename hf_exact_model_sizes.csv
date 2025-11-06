@@ -1,0 +1,10 @@
+Model,Repository,Size (GB),Size (Bytes),Type
+qwen3-32b-mlx-4bit-24k,Qwen/Qwen3-32B-MLX-4bit,16.21,17406055438,mlx
+Qwen3-32B-exl3-4bpw,turboderp/Qwen3-32B-exl3,16.54,17760824452,standard
+hosted_vllm/Qwen/Qwen3-32B-AWQ,Qwen/Qwen3-32B-AWQ,18.0,19325613342,standard
+rtx6k-unsloth-Qwen3-32B-Q4_K_M,unsloth/Qwen3-32B-GGUF,18.4,19762150048,gguf
+rtx6k-Qwen3-32B-UD-Q4_K_XL,unsloth/Qwen3-32B-GGUF,18.65,20021713568,gguf
+RedHatAI/Qwen3-32B-NVFP4A16,RedHatAI/Qwen3-32B-NVFP4A16,19.25,20666494670,standard
+RedHatAI/Qwen3-32B-NVFP4,RedHatAI/Qwen3-32B-NVFP4,19.25,20666585408,standard
+hosted_vllm/unsloth/Qwen3-32B-FP8,unsloth/Qwen3-32B-FP8,31.97,34322666860,standard
+hosted_vllm/Qwen/Qwen3-32B,Qwen/Qwen3-32B,61.02,65524386890,standard

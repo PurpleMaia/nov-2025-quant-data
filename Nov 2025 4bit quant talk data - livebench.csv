@@ -1,0 +1,10 @@
+Desc,model,quant,context,KV cache quant,Threads,full run time,results,base model,model string
+"5 thread nonthink, hosted_vllm/Qwen/Qwen3-32B",hosted_vllm/Qwen/Qwen3-32B,bf16,24k,fp16,5,142m16.551s,see datasheet,qwen3-32b,vllm-qwen-qwen3-32b-bf16
+"10 thread nonthink, rtx6k-unsloth-Qwen3-32B-Q4_K_M",rtx6k-unsloth-Qwen3-32B-Q4_K_M,gguf Q4_K_M,29k,fp16,10,61m47.269s,see datasheet,qwen3-32b,rtx6k-unsloth-qwen3-32b-q4_k_m
+"10 thread nonthink, rtx6k-Qwen3-32B-UD-Q4_K_XL",rtx6k-Qwen3-32B-UD-Q4_K_XL,gguf UD-Q4_K_XL,29k,fp16,10,61min ish,see datasheet,qwen3-32b,unsloth-rtx6k-qwen3-32b-ud-q4_k_xl 
+"15 thread rtx6kpro nonthink, Qwen3-32B-exl3-4bpw",Qwen3-32B-exl3-4bpw,exl3-4bpw,24k,fp16,15,39min ish for full livebench,see datasheet,qwen3-32b,exl3-turbder-qwen3-32b-exl3-4bpw
+"1 thread m3ult nonthink, m3ult-qwen-qwen3-32b-mlx-4bit",m3ult-qwen-qwen3-32b-mlx-4bit,mlx-4bit,24k,q8-bal-1,1,673m26.370s,see datasheet,qwen3-32b,m3ult-qwen-qwen3-32b-mlx-4bit 
+"20 thread rtx6kpro nonthink, RedhatAI/Qwen3-32B-NVFP4A16",RedhatAI/Qwen3-32B-NVFP4A16,NVFP4A16,24k,fp16,20,26m 39s,see datasheet,qwen3-32b,vllm-rh-qwen-qwen3-32b-nvfp4a16
+"20 thread rtx6kpro nonthink, RedhatAI/Qwen3-32B-NVFP4",RedhatAI/Qwen3-32B-NVFP4,NVFP4,24k,fp16,20,around 26min,see datasheet,qwen3-32b,vllm-rh-qwen-qwen3-32b-nvfp4
+"20 thread rtx6kpro nonthink, qwen/qwen3-32b-awq",qwen/qwen3-32b-awq,AWQ-4bit,24k,fp16,20,26min 12s,see datasheet,qwen3-32b,vllm-qwen-qwen3-32b-awq
+"10 thread rtx6kpro nonthink, unsloth/Qwen3-32B-FP8",unsloth/Qwen3-32B-FP8,FP8,24k,fp16,10,72 min,see datasheet,qwen3-32b,vllm-unsloth-qwen3-32b-fp8
